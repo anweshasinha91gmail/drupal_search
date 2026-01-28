@@ -1,0 +1,6 @@
+services:
+  recipe_statistics_command.commands:
+    class: Drupal\recipe_statistics_command\Commands\RecipeStatsCommands
+    arguments: ['@entity_type.manager']
+    tags:
+      - { name: drush.command }

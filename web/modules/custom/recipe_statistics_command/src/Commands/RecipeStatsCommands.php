@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\facet_search_access\Commands;
+namespace Drupal\recipe_statistics_command\Commands;
 
 use Drush\Commands\DrushCommands;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
