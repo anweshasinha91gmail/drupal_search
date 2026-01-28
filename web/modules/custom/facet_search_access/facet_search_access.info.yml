@@ -1,0 +1,5 @@
+name: 'Facet Search Access'
+type: module
+description: 'A custom module for creating custom access check on the users'
+package: Custom
+core_version_requirement: ^10 || ^11

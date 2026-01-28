@@ -1,0 +1,9 @@
+services:
+  facet_search_access.faceted_search_access_check:
+    class: Drupal\facet_search_access\Access\FacetedSearchAccessCheck
+
+
+  facet_search_access.route_subscriber:
+    class: Drupal\facet_search_access\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }

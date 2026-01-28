@@ -1,0 +1,22 @@
+uuid: 9ab22e8b-8c8d-4d16-a9ea-d5db773d4401
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - receipe_theme
+_core:
+  default_config_hash: YC1H0JGjRvoA9RedtLhXY-9AYUTPz3XxcmDb_3H-tWY
+id: receipe_theme_help
+theme: receipe_theme
+region: highlighted
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

@@ -1,0 +1,27 @@
+uuid: 6ec968dd-8b33-4560-a0e1-16a3c1827f8e
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - receipe_theme
+_core:
+  default_config_hash: AfSUDNgp83BgtFu-6vdnbBScZBJUji6fn_L4_7296DY
+id: receipe_theme_main_menu
+theme: receipe_theme
+region: header
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

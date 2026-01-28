@@ -15,6 +15,7 @@ dependencies:
   module:
     - content_moderation
     - contextual
+    - facet_search_access
     - file
     - layout_builder
     - node
@@ -59,6 +60,7 @@ permissions:
   - 'edit own recipe content'
   - 'edit terms in recipe_category'
   - 'edit terms in tags'
+  - 'search recipes'
   - 'use editorial transition create_new_draft'
   - 'view all revisions'
   - 'view article revisions'

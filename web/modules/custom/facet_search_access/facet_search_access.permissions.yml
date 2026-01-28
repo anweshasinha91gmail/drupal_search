@@ -1,0 +1,3 @@
+search recipes:
+  title: 'Search recipes'
+  description: 'Access to facet recipe search view page'
