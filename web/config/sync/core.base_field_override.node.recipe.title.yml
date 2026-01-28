@@ -1,0 +1,20 @@
+uuid: 0a028ae3-f155-4694-8e5b-779c5a730d40
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.recipe
+_core:
+  default_config_hash: L5GWNOB-GmrakzgU30NW9tGi0jhU2Pry8ur3YjTkhoo
+id: node.recipe.title
+field_name: title
+entity_type: node
+bundle: recipe
+label: 'Recipe Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

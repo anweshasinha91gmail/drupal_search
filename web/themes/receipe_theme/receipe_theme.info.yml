@@ -1,0 +1,21 @@
+name: Receipe Theme
+type: theme
+base theme: umami
+description: Custom theme for recipe search
+package: Custom
+core_version_requirement: ^10
+regions:
+  pre_header: Pre-header
+  header: Header
+  highlighted: Highlighted
+  tabs: Tabs
+  banner_top: 'Banner Top'
+  breadcrumbs: Breadcrumbs
+  page_title: 'Page Title'
+  content: Content
+  sidebar: Sidebar
+  content_bottom: 'Content Bottom'
+  footer: Footer
+  bottom: Bottom
+  page_top: 'Page top' # Needed by Drupal Core
+  page_bottom: 'Page bottom' # Needed by Drupal Core
