@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * Implements hook_views_data().
+ */
+function ingredient_count_processor_views_data() {
+  $data = [];
+
+  // Replace 'search_api_index_YOUR_INDEX_ID' with your actual index ID.
+  // You can find this ID in the Search API UI or by checking the
+  // 'views_data' table in your database. Usually it is:
+  // 'search_api_index_' + machine_name of your index.
+
+  $table_name = 'search_api_index_content_index'; // Example ID
+
+  $data[$table_name]['recipe_ingredient_count'] = [
+    'title' => t('Ingredient Count (Custom Plugin)'),
+    'help' => t('Displays the number of ingredients using a custom plugin.'),
+    'field' => [
+      'id' => 'recipe_ingredient_count', // This matches the @ViewsField ID
+    ],
+  ];
+
+  return $data;
+}

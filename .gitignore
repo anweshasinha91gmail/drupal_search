@@ -32,6 +32,12 @@
 
 #Ignore
 web/.htaccess
+.DS_Store
+web/($definitions));
+web/.DS_Store
+\web/= Drupal::service('plugin.manager.search_api.processor')->getDefinitions();
+web/modules/.DS_Store
+web/modules/custom/.DS_Store
 
 
 

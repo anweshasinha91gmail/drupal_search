@@ -1,0 +1,8 @@
+name: 'Ingredient Count Processor'
+type: module
+description: 'Adds a custom Search API processor to count ingredients per recipe.'
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:views
+  - search_api:search_api
