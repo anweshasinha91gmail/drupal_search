@@ -92,12 +92,25 @@ ddev drush site:install demo_umami \
 
 ddev drush cset config_split.config_split.umami_configurations status true -y
 
+ddev drush en \
+  search_api \
+  search_api_db \
+  facets \
+  facets_summary \
+  config_split \
+  structure_sync \
+  facet_search_access \
+  recipe_statistics_command \
+  ingredient_count_processor -y
+
 ddev drush config:import \
   --source=/var/www/html/web/splits \
   --partial -y
 
 
 ddev drush cr
+
+ddev drush search-api:index content_index
 
 ----
 ## **No UUID changes required** – the Config Split ensures only your custom configs (web/split) are imported, avoiding conflicts with the Umami demo profile.

@@ -11,12 +11,9 @@ no_patching: false
 storage: folder
 folder: splits
 module:
-  better_exposed_filters: 0
   config_split: 0
   facet_search_access: 0
   facets: 0
-  facets_exposed_filters: 0
-  facets_searchbox_widget: 0
   facets_summary: 0
   ingredient_count_processor: 0
   recipe_statistics_command: 0
@@ -24,6 +21,9 @@ module:
   search_api: 0
   search_api_db: 0
   structure_sync: 0
+  better_exposed_filters: 0
+  facets_exposed_filters: 0
+  facets_searchbox_widget: 0
   views_filters_summary: 0
   views_filters_summary_search_api: 0
 theme: {  }
@@ -31,12 +31,15 @@ complete_list:
   - block.block.receipe_theme_facetsummary
   - block.block.receipe_theme_recipecategory
   - block.block.receipe_theme_tags
+  - config_split.config_split.umami_configurations
   - facets.facet.recipe_category
   - facets.facet.tags
   - facets_summary.facets_summary.facet_summary
   - menu_ui.settings
   - search_api.index.content_index
   - search_api.server.database_server
+  - search_api.settings
+  - search_api_db.settings
   - structure_sync.data
   - views.view.advanced_search
   - views.view.faceted_search
