@@ -1,0 +1,7 @@
+adding:
+  dependencies:
+    module:
+      - search
+  permissions:
+    - 'search content'
+removing: {  }

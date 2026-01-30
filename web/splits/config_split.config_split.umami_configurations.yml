@@ -1,0 +1,40 @@
+uuid: ef66b368-9bf0-4a8a-8ef3-dbb5d8169493
+langcode: en
+status: true
+dependencies: {  }
+id: umami_configurations
+label: 'Umami Configurations'
+description: 'Configuration files to be exported only for umami profile'
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: splits
+module:
+  better_exposed_filters: 0
+  config_split: 0
+  facet_search_access: 0
+  facets: 0
+  facets_exposed_filters: 0
+  facets_searchbox_widget: 0
+  facets_summary: 0
+  ingredient_count_processor: 0
+  recipe_statistics_command: 0
+  search: 0
+  search_api: 0
+  search_api_db: 0
+  views_filters_summary: 0
+  views_filters_summary_search_api: 0
+theme: {  }
+complete_list:
+  - block.block.receipe_theme_facetsummary
+  - block.block.receipe_theme_recipecategory
+  - block.block.receipe_theme_tags
+  - facets.facet.recipe_category
+  - facets.facet.tags
+  - facets_summary.facets_summary.facet_summary
+  - search_api.index.content_index
+  - search_api.server.database_server
+  - views.view.advanced_search
+  - views.view.faceted_search
+partial_list: {  }

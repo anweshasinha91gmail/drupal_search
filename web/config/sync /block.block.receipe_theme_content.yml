@@ -1,0 +1,22 @@
+uuid: 3b48eb83-1f74-4c88-9870-dd98c28fc808
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - receipe_theme
+_core:
+  default_config_hash: R0XK_KzE-HPbKLfcvVjZF2FL79MUEIipq_nDvje9MRQ
+id: receipe_theme_content
+theme: receipe_theme
+region: content
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

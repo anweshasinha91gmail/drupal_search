@@ -1,0 +1,28 @@
+uuid: 808ab8fe-9990-4177-9a72-55bd601810f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets_summary.facets_summary.facet_summary
+  module:
+    - facets_summary
+    - system
+  theme:
+    - receipe_theme
+id: receipe_theme_facetsummary
+theme: receipe_theme
+region: sidebar
+weight: -8
+provider: null
+plugin: 'facets_summary_block:facet_summary'
+settings:
+  id: 'facets_summary_block:facet_summary'
+  label: 'Facet Summary'
+  label_display: visible
+  provider: facets_summary
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /faceted-search
