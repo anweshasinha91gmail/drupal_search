@@ -92,7 +92,10 @@ ddev drush site:install demo_umami \
 
 ddev drush cset config_split.config_split.umami_configurations status true -y
 
-ddev drush cim --partial -y
+ddev drush config:import \
+  --source=/var/www/html/web/splits \
+  --partial -y
+
 
 ddev drush cr
 
