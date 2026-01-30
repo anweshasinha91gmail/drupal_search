@@ -26,6 +26,7 @@
         "drupal/jquery_ui_slider": "^2.1",
         "drupal/jquery_ui_touch_punch": "^1.1",
         "drupal/search_api": "^1.40",
+        "drupal/structure_sync": "^2.0",
         "drupal/views_ajax_history": "^1.8",
         "drupal/views_filters_summary": "^3.3",
         "drush/drush": "^13.7"

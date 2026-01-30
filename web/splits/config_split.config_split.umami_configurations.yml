@@ -23,6 +23,7 @@ module:
   search: 0
   search_api: 0
   search_api_db: 0
+  structure_sync: 0
   views_filters_summary: 0
   views_filters_summary_search_api: 0
 theme: {  }
@@ -33,8 +34,10 @@ complete_list:
   - facets.facet.recipe_category
   - facets.facet.tags
   - facets_summary.facets_summary.facet_summary
+  - menu_ui.settings
   - search_api.index.content_index
   - search_api.server.database_server
+  - structure_sync.data
   - views.view.advanced_search
   - views.view.faceted_search
 partial_list: {  }

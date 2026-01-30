@@ -1,0 +1,27 @@
+menus:
+  -
+    menu_name: main
+    title: 'Advanced Search'
+    parent: null
+    uri: 'internal:/en/advanced-search'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -47
+    langcode: en
+    uuid: bc941dca-933d-4b18-91ac-76c9a51a89c7
+    options: {  }
+  -
+    menu_name: main
+    title: 'Faceted Search'
+    parent: null
+    uri: 'internal:/faceted-search'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: 0
+    langcode: en
+    uuid: 17dacb71-fdd2-41cb-b234-1ef609c773af
+    options: {  }
