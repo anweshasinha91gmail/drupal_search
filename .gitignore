@@ -38,7 +38,6 @@ web/.DS_Store
 \web/= Drupal::service('plugin.manager.search_api.processor')->getDefinitions();
 web/modules/.DS_Store
 web/modules/custom/.DS_Store
-web/config/sync/
 web/config/sync/node.type.recipe.yml
 web/config/sync/node.type.article.yml
 web/config/sync/node.type.page.yml
