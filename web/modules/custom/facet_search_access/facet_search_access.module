@@ -1,0 +1,22 @@
+<?php
+use Drupal\Core\Access\AccessResult;
+use Drupal\block\Entity\Block;
+use \Drupal\Core\Session\AccountInterface;
+
+/**
+ * Display the block only to those account which has search receipe permission.
+ * For annonymous user the block has made forbidden from display
+ */
+function facet_search_access_block_access(Block $block, $operation, AccountInterface $account) {
+  if ($operation === 'view' && $block->id() === 'receipe_theme_facetsummary') {
+    return AccessResult::forbiddenIf($account->isAnonymous())
+  ->orIf(AccessResult::allowedIfHasPermission($account, 'search recipes'));
+  }
+}
+
+function facet_search_access_preprocess_block(&$variables) {
+  // Check block ID.
+  if ($variables['elements']['#id'] === 'receipe_theme_facetsummary') {
+    $variables['attributes']['class'][] = 'pt-4';
+  }
+}

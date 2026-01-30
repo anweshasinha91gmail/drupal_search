@@ -4,6 +4,8 @@ base theme: umami
 description: Custom theme for recipe search
 package: Custom
 core_version_requirement: ^10
+libraries:
+  - receipe_theme/global-styling
 regions:
   pre_header: Pre-header
   header: Header
